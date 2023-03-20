@@ -13,8 +13,6 @@ function addActive(event) {
     event.target.classList.add('active');
     rating = event.target.innerText;
   }
-
-  //   console.log(rating);
 }
 
 function removeActive() {
