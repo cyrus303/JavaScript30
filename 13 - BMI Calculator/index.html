@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Dictionary</title>
+
+    <link rel="icon" href="https://fav.farm/🔥" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="title" id="title">Body Mass Index (BMI) Calculator</h1>
+      <div class="height-container">
+        <div class="height-label" id="height-label">Your Height (cm):</div>
+        <input
+          type="number"
+          name="height"
+          id="height-input"
+          class="height-input"
+          value="180"
+        />
+      </div>
+      <div class="weight-container">
+        <div class="Weight-label" id="Weight-label">Your Weight (kg):</div>
+        <input
+          type="number"
+          name="weight"
+          id="weight-input"
+          class="weight-input"
+          value="80"
+        />
+      </div>
+      <button class="compute" id="compute">Compute BMI</button>
+      <input
+        type="number"
+        name="BMI"
+        id="BMI-output"
+        class="BMI-output"
+        value="80"
+        disabled="true"
+      />
+      <div class="result-text" id="result-text">
+        Weight Condition:
+        <span class="result-text-value" id="result-text-value"
+          >Normal weight</span
+        >
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

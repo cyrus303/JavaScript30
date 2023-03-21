@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: cursive;
+    background: #EB3349;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F45C43, #EB3349);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F45C43, #EB3349);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-container {
+
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 450px;
+    width: 600px;
+    background-color: #e4d7d7;
+    color: #31343d;
+    box-shadow: 5px 5px 10px #00000085;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.height-label,
+.Weight-label,
+.result-text {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+input {
+    background-color: #979797;
+    color: #383838;
+    border: 7px solid #383838;
+    height: 30px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 0px;
+    outline: none;
+}
+
+.BMI-output {
+    color: #979797;
+    background-color: #383838;
+    border: 7px solid #979797;
+}
+
+.compute {
+    background-color: #e4d7d7;
+    color: #383838;
+    border: 7px solid #eb3349;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    width: 220px;
+    padding: 10px 0px;
+    text-transform: capitalize;
+    margin: 10px 0px;
+}
