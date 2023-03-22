@@ -17,7 +17,7 @@ function computeBMI() {
     resultTextValueEl.innerText = 'Normal weight';
   } else if (BMI >= 25 && BMI <= 29.9) {
     resultTextValueEl.innerText = 'Overweight';
-  } else {
+  } else if (BMI >= 30) {
     resultTextValueEl.innerText = 'Obesity';
   }
 }
