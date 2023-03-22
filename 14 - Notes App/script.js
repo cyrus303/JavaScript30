@@ -6,20 +6,6 @@ getNotesLS().forEach((note) => {
   addNoteEl.before(noteEl);
 });
 
-function addNote() {
-  const notes = getNotesLS();
-  const noteObj = {
-    id: Math.floor(Math.random() * 100000),
-    content: '',
-  };
-
-  const noteEl = createNoteEl(noteObj.id, noteObj.content);
-
-  addNoteEl.before(noteEl);
-  notes.push(noteObj);
-  saveNotesLS(notes);
-}
-
 function createNoteEl(id, content) {
   const note = document.createElement('textarea');
   note.name = 'note';
@@ -39,20 +25,32 @@ function createNoteEl(id, content) {
   return note;
 }
 
+function addNote() {
+  const notes = getNotesLS();
+  const noteObj = {
+    id: Math.floor(Math.random() * 100000),
+    content: '',
+  };
+
+  const noteEl = createNoteEl(noteObj.id, noteObj.content);
+
+  addNoteEl.before(noteEl);
+  notes.push(noteObj);
+  saveNotesLS(notes);
+}
+
 function deleteNote(id, note) {
   const confirm = window.confirm('Do you want to delete this note?');
   if (confirm) {
     const notes = getNotesLS().filter((note) => note.id != id);
     console.log(notes);
     saveNotesLS(notes);
-    addNoteEl.removeChild(note);
+    notesContainerEl.removeChild(note);
   }
 }
 
-/! delete note need to be worked on*/;
-
 function updateNote(id, content) {
-  console.log(`id: ${id} content:${content}`);
+  //   console.log(`id: ${id} content:${content}`);
   const notes = getNotesLS();
   const target = notes.filter((note) => note.id === id)[0];
   target.content = content;
