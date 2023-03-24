@@ -59,6 +59,7 @@ body {
     justify-content: space-between;
     margin: 40px;
 
+
 }
 
 select {
@@ -72,6 +73,7 @@ select {
     width: 90px;
     text-align: center;
     font-size: 20px;
+    /* padding-right: 50px; */
 }
 
 input {
@@ -83,12 +85,12 @@ input {
     font-family: 'Roboto Mono', monospace;
     color: #ebebeb;
     font-size: 20px;
-    width: 30%;
+    width: 40%;
     outline: none;
     color: #1f2421;
 
 }
 
-.summary {
+.exchangeSummary {
     font-weight: 500;
 }

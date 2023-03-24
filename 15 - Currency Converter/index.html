@@ -20,17 +20,19 @@
     <div class="black-div">
       <div class="title">Currency Convertor</div>
     </div>
-    <div class="main-container">
+    <div class="main-container" id="main-container">
       <div class="currency1-container">
-        <select name="currency1" class="currency1" id="currency1">
-          <option value="AUD">AUD</option>
-          <option value="CAD">CAD</option>
-          <option value="EUR">EUR</option>
-          <option value="GBP">GBP</option>
-          <option value="INR">INR</option>
-          <option value="JPY">JPY</option>
-          <option value="USD">USD</option>
-        </select>
+        <form>
+          <select name="currency1" class="currency1" id="currency1">
+            <option value="AUD" autocomplte="off">AUD</option>
+            <option value="CAD">CAD</option>
+            <option value="EUR" selected="selected">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="INR">INR</option>
+            <option value="JPY">JPY</option>
+            <option value="USD">USD</option>
+          </select>
+        </form>
 
         <input
           type="text"
@@ -42,15 +44,17 @@
       </div>
 
       <div class="currency2-container">
-        <select name="currency2" class="currency2" id="currency2">
-          <option value="AUD">AUD</option>
-          <option value="CAD">CAD</option>
-          <option value="EUR">EUR</option>
-          <option value="GBP">GBP</option>
-          <option value="INR">INR</option>
-          <option value="JPY">JPY</option>
-          <option value="USD">USD</option>
-        </select>
+        <form>
+          <select name="currency2" class="currency2" id="currency2">
+            <option value="AUD">AUD</option>
+            <option value="CAD">CAD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="INR" selected="selected">INR</option>
+            <option value="JPY">JPY</option>
+            <option value="USD">USD</option>
+          </select>
+        </form>
 
         <input
           type="text"
@@ -62,7 +66,7 @@
         />
       </div>
 
-      <p class="summary" id="summary">1 USD = 1.4969 AUD</p>
+      <p class="exchangeSummary" id="exchangeSummary">1 USD = 1.4969 AUD</p>
     </div>
 
     <script src="script.js"></script>

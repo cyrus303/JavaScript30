@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stepper</title>
+
+    <link rel="icon" href="https://fav.farm/🔥" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a6c61975fc.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main-container" id="main-container">
+      <div class="progress-container">
+        <hr class="progress-bar-back" />
+        <hr class="progress-bar-front" />
+        <div class="step">
+          <i class="fas fa-check" id="checked"></i>
+          <small>Start</small>
+        </div>
+        <div class="step">
+          <i class="fas fa-times"></i>
+          <small>Form</small>
+        </div>
+        <div class="step">
+          <i class="fas fa-times"></i>
+          <small>OTP</small>
+        </div>
+        <div class="step">
+          <i class="fas fa-times"></i>
+          <small>Review</small>
+        </div>
+        <div class="step">
+          <i class="fas fa-times"></i>
+        <small>Submit</small>
+        </div>
+      </div>
+      <div class="btn-container">
+        <button class="btn" id="prev" disabled>
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <button class="btn" id="next"><i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- 
+      <div class="stepper-container">
+        <div class="step1-container" id="step1-container">
+          <div class="step step1" id="step1"></div>
+          <p class="text step1-text" id="step1-text">Step1</p>
+          <p class="info" id="info">Card Details</p>
+        </div>
+        <div class="bar"></div>
+        <div class="step2-container" id="step2-container">
+          <div class="step step2" id="step2"></div>
+          <p class="text step2-text" id="step2-text">Step2</p>
+          <p class="info" id="info">Form Review</p>
+        </div>
+        <div class="step3-container" id="step3-container">
+          <div class="step step3" id="step3"></div>
+          <p class="text step3-text" id="step3-text">Step3</p>
+          <p class="info" id="info">OTP</p>
+        </div>
+        <div class="step4-container" id="step4-container">
+          <div class="step step4" id="step4"></div>
+          <p class="text step4-text" id="step4-text">Step4</p>
+          <p class="info" id="info">Create Code</p>
+        </div>
+        <div class="step5-container" id="step5-container">
+          <div class="step step5" id="step5"></div>
+          <p class="text step5-text" id="step5-text">Step5</p>
+          <p class="info" id="info">Review</p>
+        </div> -->
